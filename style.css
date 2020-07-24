@@ -168,31 +168,7 @@ img{
 }
 
 @media screen and (max-width: 700px){
-     body{
-       width:70%;
-        overflow: visible;
-     }
-    .fsa-times-title{
-        position: absolute;
-        display: flex;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        top:0;
-        left:10px}
-
-    .fsa-times-subheading{
-        padding-top:15px;
-    }
-
-    .contact {
-        position:relative;
-        text-align: center;
-        padding-top: 50px;
-        left:0; 
-        bottom:0;
-       
-    }
+    
 
     .box{
       width: 70%;
