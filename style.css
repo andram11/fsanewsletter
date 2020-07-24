@@ -177,10 +177,13 @@ img{
     top:0;
     left:10px}
 
+    .fsa-times-subheading{
+      padding-top:15px;
+  }
     .contact {
       position:relative;
       text-align: center;
-      padding-top: 50px;
+      padding-top: 100px;
       left:0; 
       bottom:0;
      
