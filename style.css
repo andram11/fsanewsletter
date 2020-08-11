@@ -170,7 +170,7 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 75px;
-    /* position: relative; */
+    position: relative; 
     
 }
 
