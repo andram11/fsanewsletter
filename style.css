@@ -3,7 +3,7 @@
 body{
     background-image: url("./images/photo-background.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 100vh; 
 }
 
 img{
@@ -11,28 +11,31 @@ img{
     height: auto;
 }
 
-
 .fsa-times-title{
     display: flex;
     justify-content: center;
-    position:absolute;
-    top:10px;
-    left:500px;
+    flex-wrap: wrap;
+    position:relative;
+    margin-bottom: -100px;
+    margin-bottom: -50px;
+    
 }
 
 .fsa-times-subheading{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position:relative;
-    top:50px;
+    
        
 }
 
 .month-volume{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position:relative;
-    top:25px;
+    
 } 
 
 
@@ -86,7 +89,6 @@ img{
     font-size: 1em;
     padding: 10px;
     color: #fff;
-    border: 2px solid #4C267C;
     border-radius: 20px/50px;
     text-decoration: none;
     cursor: pointer;
@@ -130,8 +132,8 @@ img{
   }
 
   .popup h2 {
-  margin-top: 0;
-  font-family: 'Rajdhani', sans-serif;
+    margin-top: 0;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .popup h4 {
@@ -162,41 +164,19 @@ img{
     font-weight: normal;
     font-size: 12px;
     color:#fff;
-    position: fixed;
-    bottom:0;
-    left:510px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 75px;
+    /* position: relative; */
+    
 }
 
-@media screen and (max-width: 700px){
-  .fsa-times-title{
-    position: absolute;
-    display: flex;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    top:0;
-    left:10px}
+.media {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-    .fsa-times-subheading{
-      padding-top:15px;
-  }
-    .contact {
-      position:relative;
-      text-align: center;
-      padding-top: 100px;
-      left:0; 
-      bottom:0;
-     
-  }
-
-    .box{
-      width: 70%;
-    }
-
-    .button {
-        font-size:0.7em;
-    }
-    .popup{
-      width: 70%;
-    }
-  }
+.media > * {
+  flex: 1 1 250px;
+}
