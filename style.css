@@ -1,147 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@400;700&display=swap");
 
-body{
-    background-image: url("./images/photo-background.jpg");
-    background-size: cover;
-    height: 100vh; 
+body {
+  background-image: url("./images/photo-background.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
-img{
-    width:150px;
-    height: auto;
+img {
+  width: 150px;
+  height: auto;
 }
 
-.fsa-times-title{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position:relative;
-    margin-top: -70px;
-    margin-bottom: -70px;
-    
+.fsa-times-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -70px;
+  margin-bottom: -70px;
 }
 
-.fsa-times-subheading{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position:relative;
-    margin-top: -30px;
-    
-       
+.fsa-times-subheading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -30px;
 }
 
-.month-volume{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    position:relative;
-    margin-top: -30px;
-    
-} 
-
-
-.fsa-times-title h1{
-    font-family: 'Rajdhani', sans-serif;
-    color: white;
-    font-style: bold;
-    font-size:90px;
-    text-align: center;
+.month-volume {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -30px;
 }
 
-.fsa-times-subheading h2{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-style: normal;
-    font-size:30px;
-
+.fsa-times-title h1 {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  font-style: bold;
+  font-size: 90px;
+  text-align: center;
 }
 
-.month-volume h3{
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-style: italic;
-    font-size:15px;
-    
+.fsa-times-subheading h2 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-style: normal;
+  font-size: 30px;
+}
 
+.month-volume h3 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.content ul {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .content p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.8;
-    margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 20px;
 }
 
 .box {
-        width: 30%;
-        margin: auto;
-        background: rgba(255,255,255,0.2);
-        padding: 35px;
-        border: 2px solid #fff;
-        border-radius: 20px/50px;
-        background-clip: padding-box;
-        text-align: center;
-        position: relative;
-        top: 50px;
+  width: 30%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
 
-  }
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
 
-  .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-family: 'Montserrat', sans-serif;
-    font-size:16px;
-  }
+.button:hover {
+  background: #4c267c;
+}
 
-  .button:hover {
-    background: #4C267C;
-  }
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 1;
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 1;
-  }
+.overlay:target {
+  visibility: visible;
+  position: sticky;
+  top: 0;
+  opacity: 1;
+}
 
-  .overlay:target {
-    visibility: visible;
-    position: sticky;
-    top:0;
-    opacity: 1; 
-  }
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #ffff;
+  border-radius: 5px;
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
 
-
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #ffff;
-    border-radius: 5px;
-    width: 50%;
-    font-family: 'Montserrat', sans-serif;
-    position:relative;
-  }
-
-  .popup h2 {
-    margin-top: 0;
-    font-family: 'Rajdhani', sans-serif;
+.popup h2 {
+  margin-top: 0;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .popup h4 {
-    margin-top: 0;
-    font-family: 'Rajdhani', sans-serif;
-  }
+  margin-top: 0;
+  font-family: "Rajdhani", sans-serif;
+}
 .popup .close {
   position: absolute;
   top: 20px;
@@ -150,28 +146,26 @@ img{
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  
 }
 .popup .close:hover {
-  color: #4C267C;
+  color: #4c267c;
 }
 
 .popup .content {
   overflow: visible;
-  opacity:1;
+  opacity: 1;
 }
 
 .contact {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    color:#fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 75px;
-    position: relative; 
-    
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 75px;
+  position: relative;
 }
 
 .media {
