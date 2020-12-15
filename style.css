@@ -6,13 +6,27 @@ body {
   height: 100vh;
 }
 
-img {
-  width: 150px;
+.logo {
+  width: 30%;
   height: auto;
 }
 
+.fsa-logo {
+  width: 25%;
+  float: left;
+}
+
+.christmas {
+  width: 80%;
+  height: 90px;
+  object-fit: cover;
+  margin-left: 150px;
+  margin-top: -50px;
+  opacity: 0.5;
+}
+
 .fsa-times-title {
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
